@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming Hero Course</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="h-full">
+    <main class="flex flex-col h-full bg-gray-700">
+      <header class="flex-none bg-black px-6 py-2.5">
+        <div class="flex items-center justify-between">
+          <h1 id="logo">
+            <a class="text-white font-bold" href="/"
+              ><img
+                class="w-full h-12 object-cover"
+                src="images/logo.png"
+                alt="Mosfiqur Rahman"
+            /></a>
+          </h1>
+          <h2 class="text-white font-bold">Mosfiqur</h2>
+        </div>
+      </header>
+      <div class="md:grid md:grid-cols-3 gap-6 p-6 max-md:space-y-6">
+        <div class="md:col-span-2 content space-y-6 rounded-md">
+          <img
+            class="milestone-image w-full h-auto object-cover rounded-md duration-700 ease-in"
+            src="images/airin-art.jpg"
+            alt=""
+          />
+          <h1 class="title text-xl font-bold text-white my-0">
+            Module title here
+          </h1>
+          <p class="details text-base font-normal text-white my-0">
+            Module description here
+          </p>
+        </div>
+        <aside class="text-white space-y-6 max-h-[90vh] overflow-y-auto">
+          <div
+            class="milestones bg-gray-900 py-6 px-2 overflow-hidden rounded-md"
+          >
+            <div
+              class="milestone border-b border-gray-700 py-1.5 mb-1.5 last:border-transparent last:mb-0"
+            >
+              <div class="flex gap-2">
+                <div class="checkbox">
+                  <input type="checkbox" />
+                </div>
+                <div class="d">
+                  <p class="text-white">Milestone 1 name</p>
+                </div>
+              </div>
+              <div class="hidden_panel">
+                <div class="module border-b border-gray-700">
+                  <p>Module</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="donelist bg-gray-900 py-6 px-2 overflow-hidden rounded-md empty:hidden"
+          ></div>
+        </aside>
+      </div>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
